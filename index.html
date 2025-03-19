@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css" media="all">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script defer src="./main.js"></script>
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
@@ -15,28 +20,27 @@
   </style>
 </head>
 <body>
-
-  <!-- Sign-up form start -->
-<main>
+<main>		
 <div class="wrapper">
-<div class="newsletter-wrapper">
-<img class="newsletter-img" src="" alt="">
-<div class="newsletter-content-card">
-<h1>Stay updated!</h1>
-<p>Join 60,000+ product managers receiving monthly updates on:</p>
+	<div class="newsletter-wrapper">
+		<img class="newsletter-img" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+		<div class="newsletter-content-card">
+			<h1>Stay updated!</h1>
+			<p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-<ul>
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-</ul>
+			<ul>
+			  <li>Product discovery and building what matters</li>
+			  <li>Measuring to ensure updates are a success</li>
+			  <li>And much more!</li>
+			</ul>
 
-<form>
-  <label for="email">Email address</label>
-  <input type="email" id="email" placeholder="email@company.com">
-</form>
-<button>Subscribe to monthly newsletter</button></div>
-</div>
+			<form class="form">
+			  <label for="email">Email address</label>
+			  <input type="email" id="email" placeholder="email@company.com">
+			</form>
+			<button class="button">Subscribe to monthly newsletter</button>
+		</div>
+	</div>
 </div>
 </main>
   <!-- Sign-up form end -->
