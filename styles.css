@@ -120,14 +120,13 @@ img{
 /* section: popup message */
 	.popup-msg-wrapper{
 		background-color: var(--white);
-		padding: 149px 24px 70px;
 		color: var(--blue800);
-		
+		padding: 149px 24px 70px;
+
 	}
 	.popup-grid{
 		display: grid;
 		gap: 32px;
-
 	}
 	.h1-font-size{
 		font-size: clamp(2.5rem,calc(7vw + 1rem),3.5rem);
@@ -154,13 +153,37 @@ img{
 	}
 
 @media (min-width: 500px){
+	body{
+		display: grid;
+		place-content:center;
+	}
 	.popup-msg-wrapper{
 		background-color: var(--white);
 		color: var(--blue800);
 		width: 504px;
-		height: 520px;
 		border-radius: 36px;
+		padding: 64px;
 	}
+	.popup-grid{
+		display: grid;
+		gap: 32px;
+
+	}
+	.popup-btn{
+		display: inline-block;
+		font-weight: bold;
+		border: none;
+		padding: 0;
+		margin: 0;
+		cursor:pointer;
+		background: var(--blue800);
+		color: var(--white);
+		height: 56px;
+		width: 100%;
+		border-radius: 8px;
+		margin-top: 32px;
+	}
+
 
 }
 /* section: media queries */
