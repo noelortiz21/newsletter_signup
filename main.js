@@ -2,6 +2,7 @@ const form = document.querySelector('.form');
 const popupBtn = document.querySelector('.popup-btn');
 const successMsg = document.querySelector('.popup-msg-wrapper');
 const wrapper = document.querySelector('.wrapper');
+const emailInput = document.querySelector('#email');
 
 
 
@@ -16,8 +17,8 @@ function handleClick(e){
 	e.preventDefault();
 	wrapper.classList.remove('h');
 	successMsg.classList.toggle('h');
+	emailInput.value = '';
 }
-
 form.addEventListener('submit',handleSubmit);
 popupBtn.addEventListener('click',handleClick);
 
