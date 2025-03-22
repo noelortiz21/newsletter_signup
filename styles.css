@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6 { text-wrap: balance; }
 	--blue700: hsl(235, 18%, 26%);
 	--red: hsl(4, 100%, 67%);
 	--redgradient: hsl(15, 100%, 61%);
+	--redgradientcolorstop2: hsl(346, 100%, 66%);
 
 	--spacing-8:8px;
 }
@@ -101,6 +102,10 @@ img{
 	input{
 		height: 56px;
 		border-radius: 8px;
+
+		&[type="email"]{
+			padding-left: calc(var(--spacing-8)*3);
+		}
 	}
 }
 .button{
@@ -108,12 +113,19 @@ img{
 	border: none;
 	padding: 0;
 	margin: 0;
+	margin-top: 24px;
 	cursor:pointer;
 	background: var(--blue800);
 	color: var(--white);
 	height: 56px;
 	width: 100%;
 	border-radius: 8px;
+
+	&:hover {
+		background: linear-gradient(90deg, var(--redgradient), var(--redgradientcolorstop2));
+	}
+
+
 }
 
 
@@ -150,6 +162,11 @@ img{
 		width: 100%;
 		border-radius: 8px;
 		margin-top: 263px;
+		
+		&:hover {
+			background: linear-gradient(90deg, var(--redgradient), var(--redgradientcolorstop2));
+		}
+
 	}
 
 @media (min-width: 500px){
