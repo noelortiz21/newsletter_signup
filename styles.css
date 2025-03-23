@@ -27,10 +27,16 @@ h1, h2, h3, h4, h5, h6 { text-wrap: balance; }
 .split{
 	display: flex;
 	justify-content: space-between;
-
-	.error-msg{
+	.error-label-msg{
 		color: var(--red);
 	}
+}
+
+
+.error-msg{
+	color: var(--red);
+	background: hsl(5,100%,95%);
+	outline-color: var(--red);
 }
 html,body{
 	height: 100%;
