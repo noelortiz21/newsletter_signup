@@ -1,3 +1,11 @@
+/*
+ notes:
+ - can use padding to expand input boxes + font-weight to increase the font size
+ - adding icons in list with li::before with prop/val content: url(), then to have them side by side can use grid 2 cols, creating space b/t icon and text increase the
+ 1st col where icon lives to a bigger size, text col can have size of auto
+ - box-shadow on form button review
+
+ */
 *, *::before, *::after { box-sizing: border-box; } * { margin: 0; }
 body {
   line-height: 1.5;
